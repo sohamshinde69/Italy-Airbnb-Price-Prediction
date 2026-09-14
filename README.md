@@ -626,3 +626,41 @@ One of the most interesting results was:
 Venice had the highest average listing price among the four analyzed cities.
 
 A separate PDF contains the SQL queries together with their result screenshots.
+
+
+
+
+
+<h2>📊 Power BI Dashboard</h2>
+
+Power BI was used to transform the analytical results into an interactive dashboard for non-coders.
+
+<h3>Dashboard Pages</h3>
+<h4>1️⃣ Overview</h4>
+
+Provides a high-level summary of the Airbnb dataset and market.
+
+<h4>2️⃣ Geographic Analysis ⭐</h4>
+
+Shows the geographical distribution of Airbnb listings using latitude and longitude.
+
+This is my preferred dashboard page because it demonstrates the geographical scope of the project visually.
+
+<h4>3️⃣ Price & Market Analysis</h4>
+Explores relationships between price and listing characteristics such as:
+
+City
+
+Room type
+
+Property type
+
+Accommodation capacity
+
+Other market characteristics
+
+<h4>🎛️ Interactive Analysis</h4>
+
+Slicers and interactive visuals allow users to explore the data without writing Python or SQL.
+
+The purpose was to make the analytical results understandable to non-technical users.
