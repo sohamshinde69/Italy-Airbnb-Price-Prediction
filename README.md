@@ -238,8 +238,11 @@ The final Streamlit model was trained using the dropped-data workflow.
 Three regression models were tested:
 
 Model	Purpose
+
 📉 Linear Regression	Simple baseline
+
 🌲 Random Forest Regressor	Tree-based ensemble
+
 🚀 Gradient Boosting Regressor	Boosting-based model
 
 The same overall evaluation approach was used to compare the models and investigate the effect of the two missing-value strategies.
