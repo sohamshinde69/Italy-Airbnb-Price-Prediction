@@ -1,247 +1,300 @@
-# Italy-Airbnb-Price-Prediction
+🇮🇹 Italy Airbnb Data Analytics and Price Prediction System
 
-Streamlit App Link : https://italy-airbnb-price-prediction.streamlit.app/
+An end-to-end Data Science project combining real-world data collection, data cleaning, SQL analysis, machine learning, Power BI, and Streamlit.
 
+📌 Project Overview
 
-Italy Airbnb Data Analytics and Price Prediction System
+The Italy Airbnb Data Analytics and Price Prediction System is an individual end-to-end Data Science project built using real Airbnb listing data from Rome, Florence, Venice, and Naples.
 
-Project Overview
+The project was created with two goals:
 
-Italy Airbnb Data Analytics and Price Prediction System is an end-to-end data science project built using real-world Airbnb listing data from four major Italian cities: Rome, Florence, Venice, and Naples.
+🎓 Fulfil a college internal project requirement.
 
-The project was designed to demonstrate a complete data science workflow rather than focusing on only one machine-learning model. It combines:
+💼 Build a portfolio project that demonstrates a broad range of Data Science skills for internship opportunities.
 
-Real-world data collection from Inside Airbnb
+Unlike my earlier projects, which mainly used Kaggle datasets and classification problems, this project uses an external real-world data source and focuses on regression.
 
-Data cleaning and preprocessing using Python
+🔄 Complete Workflow
 
-Missing-value analysis and comparison of two cleaning approaches
+Inside Airbnb
+      ↓
+Data Collection
+      ↓
+Data Cleaning & Preprocessing
+      ↓
+Missing-Value Strategy Comparison
+      ↓
+Exploratory Analysis
+      ↓
+SQL Analysis ──────────────┐
+      ↓                    │
+Machine Learning           │
+      ↓                    │
+Model Comparison           │
+      ↓                    │
+Gradient Boosting          │
+      ↓                    │
+Streamlit App              │
+                           │
+Power BI Dashboard ←───────┘
 
-Exploratory and business-oriented data analysis
+🎯 Objectives
 
-Beginner-level SQL analysis using MySQL
+Collect real-world Airbnb data from an external source.
 
-Regression model development and comparison
+Combine data from multiple Italian cities using a consistent schema.
 
-Interactive Power BI dashboards
+Clean and preprocess the raw data.
 
-A Streamlit application for Airbnb nightly-price estimation
+Compare different missing-value handling strategies.
 
-Model serialization for application use
+Analyze Airbnb pricing patterns using Python and SQL.
 
-The project was developed as an individual college project, while also being designed as a portfolio project to demonstrate practical data-science skills for internship opportunities.
+Compare multiple regression models.
 
-Objectives
-
-The main objectives were to:
-
-Build a data science project using a real external data source instead of a Kaggle dataset.
-
-Demonstrate the complete data science workflow from data collection to deployment.
-
-Analyze Airbnb pricing patterns across major Italian tourist cities.
-
-Compare different approaches for handling missing data.
-
-Build and compare multiple regression models for price prediction.
-
-Use SQL to answer practical business questions from the cleaned dataset.
+Evaluate models using MAE, RMSE, and R².
 
 Build an interactive Power BI dashboard for non-technical users.
 
-Convert the final machine-learning model into an interactive Streamlit application.
+Deploy the final model through a Streamlit application.
 
-Demonstrate the ability to learn and integrate a new skill, SQL, into an existing data-science workflow.
+Demonstrate the ability to learn and integrate a new technology — SQL — into a Data Science workflow.
 
-Why Airbnb and Italy?
+🌍 Why Airbnb and Italy?
 
-Airbnb was selected because it provides a realistic business problem involving pricing, property characteristics, location, reviews, and accommodation capacity.
+I chose Airbnb and Italy for several reasons:
 
-Italy was selected because its major tourist destinations provide an interesting basis for comparing Airbnb markets.
+Airbnb provides a real-world business problem involving pricing.
 
-The project was also intentionally different from earlier projects that relied on Kaggle datasets and classification problems. This project uses an externally collected dataset and focuses on regression, giving the project a broader technical scope.
+The dataset contains both numerical and categorical variables.
 
-Cities Covered
+Italy has several major tourist destinations that can be compared.
+
+Latitude and longitude make geographical analysis possible.
+
+The topic works well with SQL, Machine Learning, Power BI, and Streamlit.
+
+It provides a practical regression problem, unlike my previous classification projects.
+
+Using an external source instead of Kaggle makes the project more representative of a real-world Data Science workflow.
+
+🏙️ Cities Included
 
 City
 
-Included
+Status
 
-Rome
+🇮🇹 Rome
 
-Yes
+✅ Included
 
-Florence
+🇮🇹 Florence
 
-Yes
+✅ Included
 
-Venice
+🇮🇹 Venice
 
-Yes
+✅ Included
 
-Naples
+🇮🇹 Naples
 
-Yes
+✅ Included
 
-Milan
+🇮🇹 Milan
 
-No
+❌ Not included
 
-Milan was initially planned for the project, but its Inside Airbnb dataset could not be loaded successfully during data collection. Naples was therefore used as the fourth city instead.
+Why not Milan?
+
+Milan was originally planned for the project, but its Inside Airbnb dataset could not be loaded successfully. I therefore used Naples as the fourth city.
+
+📊 Dataset
 
 Data Source
 
-The project uses Inside Airbnb listing datasets.
+The data was collected from Inside Airbnb rather than downloaded from Kaggle.
 
-The data was collected separately for each city and then combined into one dataset. The same selected columns were used across all cities so that the datasets could be concatenated consistently.
+Each city's dataset was collected separately using the same selected columns so that the datasets could be combined consistently.
 
-Selected variables
+Dataset Size
 
-Column
+City
+
+Listings
+
+Rome
+
+37,084
+
+Florence
+
+13,472
+
+Venice
+
+8,766
+
+Naples
+
+11,575
+
+Combined
+
+70,897
+
+Original combined dataset: 70,897 rows × 14 columns
+
+🧾 Dataset Features
+
+Feature
 
 Description
 
-Main use
+Used For
 
 id
 
 Listing identifier
 
-Listing reference
+Reference
 
 latitude
 
 Geographic latitude
 
-Geographic analysis
+Mapping
 
 longitude
 
 Geographic longitude
 
-Geographic analysis
+Mapping
 
 property_type
 
 Type of property
 
-Analysis / ML
+Analysis + ML
 
 room_type
 
-Type of room/accommodation
+Type of room
 
-Analysis / ML
+Analysis + ML
 
 accommodates
 
-Number of guests accommodated
+Number of guests
 
-Analysis / ML
+Analysis + ML
 
 bedrooms
 
 Number of bedrooms
 
-Analysis / ML
+Analysis + ML
 
 bathrooms
 
 Number of bathrooms
 
-Analysis / ML
+Analysis + ML
 
 price
 
-Listing price
+Nightly listing price
 
-Target variable
+Target
 
 price_quote_price_per_night
 
-Price per night from quote data
+Quoted nightly price
 
-Supporting price field
+Analysis
 
 minimum_nights
 
-Minimum stay requirement
+Minimum stay
 
-Analysis / ML
+Analysis + ML
 
 number_of_reviews
 
 Number of reviews
 
-Analysis / ML
+Analysis + ML
 
 review_scores_rating
 
-Review rating
+Listing rating
 
-Analysis / ML
+Analysis + ML
 
 city
 
-Added city identifier
+City identifier
 
-Comparison / ML
+Analysis + ML
 
-Dataset Construction
+📍 Why Keep Latitude & Longitude?
 
-The individual city datasets contained:
+latitude and longitude were retained even though they were not used as model inputs.
 
-Rome: 37,084 rows
+They were important for the Power BI Geographic Analysis page, allowing the project to visually demonstrate the geographical coverage of the collected listings.
 
-Florence: 13,472 rows
+🧹 Data Cleaning
 
-Venice: 8,766 rows
+The raw dataset contained missing values in several important columns.
 
-Naples: 11,575 rows
+Initial Missing Values
 
-The combined dataset contained:
+Column
 
-70,897 rows × 14 columns
+Missing Values
 
-A city column was added to each city dataset before concatenation so that city-level comparisons could be performed after combining the data.
+bedrooms
 
-Data Cleaning
+12,877
 
-The raw combined dataset contained missing values in several important columns.
+bathrooms
 
-Initial missing-value counts included:
+11,004
 
-bathrooms: 11,004
+review_scores_rating
 
-bedrooms: 12,877
+9,020
 
-price: 5,050
+price
 
-price_quote_price_per_night: 5,051
+5,050
 
-minimum_nights: 22
+price_quote_price_per_night
 
-review_scores_rating: 9,020
+5,051
 
-The price field also required conversion from currency-formatted strings such as $117.13 into numerical values.
+minimum_nights
 
-Price conversion
+22
+
+The price column also contained currency-formatted values such as $117.13, which needed to be converted into numerical values.
+
+💰 Price Cleaning
 
 The price field was cleaned by:
 
-Converting the column to string.
+Converting values to strings.
 
-Removing the $ symbol.
+Removing $.
 
 Removing commas.
 
-Converting the result to floating-point numbers.
+Converting the result to numerical values.
 
-Comparing Missing-Value Strategies
+🔬 Missing-Value Strategy Comparison
 
-Rather than immediately choosing one missing-value strategy, the project compared two approaches.
+Instead of immediately choosing one method, I experimented with two approaches.
 
-Approach 1: Probability-based imputation
+Approach 1 — Probability-Based Imputation
 
 For selected columns such as:
 
@@ -251,35 +304,45 @@ bedrooms
 
 review_scores_rating
 
-the observed value distribution was calculated and missing values were filled by sampling according to the observed probabilities.
+missing values were filled by sampling from the observed value distribution.
 
-This approach retained substantially more rows.
+Advantage
 
-Approach 2: Dropping incomplete rows
+Retained substantially more records.
 
-The second approach removed rows containing missing values using dropna().
+Disadvantage
 
-This produced a complete dataset of:
+Introduced estimated/artificial values.
 
-44,946 rows × 14 columns
+Approach 2 — Dropping Incomplete Rows
 
-The two approaches were compared because the goal was not simply to maximize dataset size. The project examined whether retaining more records through imputation would actually result in better downstream modeling and analysis.
+Rows containing missing values were removed using dropna().
 
-The final deployed model was trained using the dropped-data workflow.
+This produced:
 
-Machine Learning
+44,946 complete listings
+
+Why Compare Both?
+
+The purpose was to determine whether keeping more rows through imputation actually produced better downstream results.
+
+The comparison showed that data quality and the effect of imputation mattered more than simply having a larger dataset.
+
+The final Streamlit model was trained using the dropped-data workflow.
+
+🤖 Machine Learning
 
 Problem Type
 
-The project treats Airbnb nightly price prediction as a supervised regression problem.
+Supervised Regression
 
-Target
+🎯 Target Variable
 
 price
 
 Input Features
 
-Numerical features
+Numerical
 
 accommodates
 bathrooms
@@ -288,42 +351,69 @@ minimum_nights
 number_of_reviews
 review_scores_rating
 
-Categorical features
+Categorical
 
 property_type
 room_type
 city
 
-id, latitude, and longitude were retained in the dataset for analysis and geographic visualization, but they were not used as prediction inputs.
+id, latitude, and longitude were retained for analysis but were not used as prediction inputs.
 
-Preprocessing
+⚙️ Preprocessing
+
+The project uses:
+
+OneHotEncoder
+
+ColumnTransformer
+
+Pipeline
 
 Categorical variables were converted into numerical representations using OneHotEncoder.
 
-A ColumnTransformer was used to apply categorical preprocessing while passing the numerical variables through unchanged.
+A ColumnTransformer was used to apply categorical preprocessing while leaving numerical features unchanged.
 
-The preprocessing and model were combined into a scikit-learn Pipeline.
+The preprocessing and model were combined into a scikit-learn Pipeline so that the same transformation process could be used when making predictions in Streamlit.
 
-This approach also helped keep preprocessing consistent between model training and the Streamlit application.
+🧪 Models Compared
 
-Models Compared
+Three regression models were tested:
 
-Three regression algorithms were tested:
+Model
 
-Random Forest Regressor
+Purpose
 
 Linear Regression
 
+Simple baseline
+
+Random Forest Regressor
+
+Tree-based ensemble
+
 Gradient Boosting Regressor
 
-The same overall preprocessing and train/test methodology was used when comparing the models.
+Boosting-based model
 
-The dataset was divided using:
+The same overall approach was used to compare the models and to investigate the effect of the two missing-value strategies.
 
-test_size = 0.23
-random_state = 42
+📈 Model Evaluation
 
-Model results on the dropped-data workflow
+The models were evaluated using:
+
+MAE — Mean Absolute Error
+
+Average absolute difference between actual and predicted prices.
+
+RMSE — Root Mean Squared Error
+
+Penalizes larger prediction errors more strongly.
+
+R² — R-squared
+
+Measures how much variation in price is explained by the model.
+
+Results — Dropped-Data Workflow
 
 Model
 
@@ -357,58 +447,74 @@ Gradient Boosting
 
 0.089
 
-Final model
+🏆 Final Model
 
-Gradient Boosting Regressor was selected for the Streamlit application.
+The final model used in the Streamlit application is:
 
-The decision was influenced by the practical behavior of the predictions. Linear Regression was initially explored, but negative price predictions were observed, which are not meaningful for a nightly accommodation price. Gradient Boosting was therefore selected as the final deployed model.
+Gradient Boosting Regressor
 
-The final Gradient Boosting configuration included:
+Configuration:
 
 n_estimators = 200
 learning_rate = 0.05
 max_depth = 3
 random_state = 42
 
-Model Evaluation
+Why Gradient Boosting?
 
-The project uses:
+Linear Regression was initially explored, but it produced negative price predictions during experimentation.
 
-Mean Absolute Error (MAE)
+Since a negative Airbnb nightly price is not meaningful, Gradient Boosting was selected as the practical model for the final application.
 
-Measures the average absolute difference between actual and predicted prices.
+The final serialized model was saved as:
 
-Root Mean Squared Error (RMSE)
+model.pkl
 
-Penalizes larger prediction errors more heavily than MAE.
+⚠️ Interpreting the Model
 
-R² Score
+The final Gradient Boosting model achieved approximately:
 
-Measures how much variation in the target is explained by the model.
+MAE  = 83.46
+RMSE = 268.37
+R²   = 0.089
 
-The final Gradient Boosting model achieved:
+The relatively low R² indicates that the selected features explain only a limited portion of Airbnb price variation.
 
-MAE: 83.46
+Therefore, the application should be viewed as a rough price-estimation tool, not an exact pricing engine.
 
-RMSE: 268.37
+Possible missing price-driving factors include:
 
-R²: 0.089
+Neighborhood
 
-The relatively low R² indicates that the selected features explain only a limited portion of the variation in Airbnb prices. This is an important limitation of the current model rather than something hidden from the project results.
+Amenities
 
-SQL Analysis
+Seasonality
+
+Demand
+
+Availability
+
+Host characteristics
+
+Other market factors
+
+This limitation is intentionally documented rather than hidden.
+
+🗄️ SQL Analysis
 
 MySQL was used to analyze the cleaned Airbnb dataset.
 
-The SQL portion intentionally focuses on beginner-level queries. This was a deliberate learning decision because SQL was a new skill during the project, and the goal was to build enough practical SQL knowledge to confidently explain every query and result.
+SQL was a new skill for me, so I intentionally kept the questions at a beginner level.
 
-The analysis includes questions such as:
+The goal was to make sure I could confidently explain every query and result if asked during my college evaluation.
+
+Questions Covered
 
 What is the average listing price in each city?
 
 What is the average price for each room type in each city?
 
-Which are the 10 highest-rated listings with more than 20 reviews?
+What are the 10 highest-rated listings with more than 20 reviews?
 
 How are listings distributed across different price ranges?
 
@@ -424,43 +530,33 @@ Which listings have received more than 50 reviews?
 
 How many listings exist for each property type?
 
-Example insight
+💡 Interesting Finding
 
-One of the notable findings was that Venice had the highest average listing price among the four cities analyzed.
+One of the most interesting results was:
 
-The SQL queries and their result screenshots are documented separately in the project SQL PDF.
+Venice had the highest average listing price among the four analyzed cities.
 
-Power BI Dashboard
+A separate PDF contains the SQL queries together with their result screenshots.
 
-Power BI was used to transform the analytical results into an interactive dashboard for users who do not need to read Python or SQL code.
+📊 Power BI Dashboard
 
-The dashboard contains three main pages:
+Power BI was used to transform the analytical results into an interactive dashboard for non-coders.
 
-1. Overview
+Dashboard Pages
 
-Provides a high-level view of the Airbnb dataset and key market information.
+1️⃣ Overview
 
-2. Geographic Analysis
+Provides a high-level summary of the Airbnb dataset and market.
 
-Visualizes the geographic distribution of listings using latitude and longitude.
+2️⃣ Geographic Analysis ⭐
 
-This is the page that focuses most strongly on the geographical aspect of the project.
+Shows the geographical distribution of Airbnb listings using latitude and longitude.
 
-3. Price & Market Analysis
+This is my preferred dashboard page because it demonstrates the geographical scope of the project visually.
 
-Explores relationships between Airbnb prices and listing characteristics such as city, room type, property characteristics, and other market variables.
+3️⃣ Price & Market Analysis
 
-Interactivity
-
-Slicers and interactive visuals allow non-technical users to explore the dataset without writing queries or code.
-
-Streamlit Application
-
-The final machine-learning model was converted into an interactive Streamlit application.
-
-The application allows a user to enter:
-
-Property information
+Explores relationships between price and listing characteristics such as:
 
 City
 
@@ -468,7 +564,35 @@ Room type
 
 Property type
 
-Listing information
+Accommodation capacity
+
+Other market characteristics
+
+🎛️ Interactive Analysis
+
+Slicers and interactive visuals allow users to explore the data without writing Python or SQL.
+
+The purpose was to make the analytical results understandable to non-technical users.
+
+🌐 Streamlit Application
+
+The final machine-learning model was integrated into a Streamlit application.
+
+The application is designed for:
+
+Anyone who wants a rough Airbnb price estimate, particularly travelers and users interested in Airbnb pricing.
+
+User Inputs
+
+Property Information
+
+City
+
+Room type
+
+Property type
+
+Listing Information
 
 Accommodates
 
@@ -482,105 +606,136 @@ Number of reviews
 
 Review score rating
 
-After clicking Predict Price, the application returns an estimated nightly price in euros.
+The application then returns an:
 
-The application loads the serialized trained model and uses the same preprocessing pipeline that was used during model development.
+💶 Estimated nightly price
 
-Deployment Challenge
+🚀 Deployment Challenge
 
-One of the biggest practical challenges was deployment.
+One of the biggest practical challenges occurred during deployment.
 
-The application worked correctly in the local VS Code environment, but the deployed Streamlit website initially produced errors.
+The Streamlit application worked correctly in VS Code locally, but the deployed Streamlit website initially produced errors.
 
 This highlighted an important difference between:
 
-running a machine-learning application locally, and
+Local Development
+        ≠
+Cloud Deployment
 
-preparing all dependencies and serialized model components correctly for a deployed environment.
+It provided practical experience with:
 
-The project therefore also provided practical experience with model serialization and deployment troubleshooting.
+Model serialization
 
-Project Workflow
+File paths
 
-Inside Airbnb Data
-        ↓
-Collect City-wise Data
-        ↓
-Select Common Columns
-        ↓
-Add City Identifier
-        ↓
-Combine Datasets
-        ↓
-Data Cleaning
-        ↓
-Missing-Value Analysis
-        ↓
-Compare Imputation vs Dropping
-        ↓
-Final Clean Dataset
-        ↓
- ┌───────────────┬────────────────┬─────────────────┐
- ↓               ↓                ↓
-SQL Analysis   ML Modeling    Power BI Dashboard
- ↓               ↓                ↓
-SQL PDF       Model Compare   Interactive Reports
-                 ↓
-          Gradient Boosting
-                 ↓
-             model.pkl
-                 ↓
-           Streamlit App
+Dependencies
 
-Technologies Used
+Deployment environments
+
+Troubleshooting
+
+🏗️ Project Architecture
+
+                   ┌──────────────────────┐
+                   │    Inside Airbnb     │
+                   └──────────┬───────────┘
+                              │
+                              ▼
+                   ┌──────────────────────┐
+                   │   Data Collection    │
+                   └──────────┬───────────┘
+                              │
+                              ▼
+                   ┌──────────────────────┐
+                   │ Data Cleaning & EDA  │
+                   └──────────┬───────────┘
+                              │
+                              ▼
+                 ┌──────────────────────────┐
+                 │ Missing-Value Comparison │
+                 └────────────┬─────────────┘
+                              │
+                              ▼
+                     ┌─────────────────┐
+                     │ Cleaned Dataset │
+                     └───────┬─────────┘
+                             │
+             ┌───────────────┼────────────────┐
+             ▼               ▼                ▼
+       ┌──────────┐   ┌────────────┐   ┌────────────┐
+       │   SQL    │   │    ML      │   │  Power BI  │
+       │ Analysis │   │  Modeling  │   │  Dashboard │
+       └──────────┘   └─────┬──────┘   └────────────┘
+                            │
+                            ▼
+                    ┌─────────────────┐
+                    │ Model Selection │
+                    └────────┬────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │ Gradient Boosting   │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                       ┌──────────┐
+                       │ model.pkl│
+                       └────┬─────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   Streamlit   │
+                    │   Prediction  │
+                    │      App      │
+                    └───────────────┘
+
+🛠️ Technologies Used
 
 Technology
 
 Purpose
 
-Python
+🐍 Python
 
-Data science workflow
+Data Science workflow
 
-Pandas
+🐼 Pandas
 
-Data loading and manipulation
+Data manipulation
 
-NumPy
+🔢 NumPy
 
 Numerical operations
 
-Scikit-learn
+🤖 Scikit-learn
 
-Preprocessing, pipelines and regression
+ML + preprocessing
 
-MySQL
+🗄️ MySQL
 
-SQL-based analysis
+SQL analysis
 
-Power BI
+📊 Power BI
 
-Interactive visualization
+Interactive dashboards
 
-Streamlit
+🌐 Streamlit
 
 ML application
 
-Pickle
+💾 Pickle
 
 Model serialization
 
-Jupyter Notebook
+📓 Jupyter Notebook
 
-Development and experimentation
+Development
 
-VS Code
+💻 VS Code
 
 Development environment
 
-Repository Structure
-
-A recommended repository structure is:
+📁 Recommended Repository Structure
 
 Italy-Airbnb-Data-Analytics-and-Price-Prediction-System/
 │
@@ -609,67 +764,51 @@ Italy-Airbnb-Data-Analytics-and-Price-Prediction-System/
 │
 └── requirements.txt
 
-Large raw datasets and model files can be handled separately if repository-size limits become an issue.
+▶️ Running the Streamlit App
 
-How to Run the Streamlit Application
-
-Install the required Python libraries:
+Install the required libraries:
 
 pip install pandas numpy scikit-learn streamlit
 
-Make sure the Streamlit script and trained model are available in the expected locations.
-
-Run:
+Then run:
 
 streamlit run streamlitapp.py
 
-The application will open in a browser.
+The application will open in your browser.
 
-Key Results
+📌 Key Results
 
 Dataset
 
 4 Italian cities
 
-70,897 original combined listings
+70,897 original listings
 
 44,946 complete listings in the dropped-data workflow
 
-14 dataset columns
-
-Analytics
-
-City-level price comparison
-
-Room-type price comparison
-
-Price-range distribution
-
-Rating analysis
-
-Review analysis
-
-Accommodation-capacity analysis
-
-Property-type analysis
-
-Geographic distribution
+14 columns
 
 Machine Learning
 
-Three regression models were compared.
+3 regression models compared
 
-Gradient Boosting was selected for deployment.
+Gradient Boosting selected for the application
 
-Final deployed-model evaluation:
+MAE: 83.46
 
-MAE  = 83.46
-RMSE = 268.37
-R²   = 0.089
+RMSE: 268.37
 
-Visualization
+R²: 0.089
 
-Three-page Power BI dashboard:
+SQL
+
+10 beginner-level analytical questions
+
+City, room type, price, ratings, reviews, capacity and property-type analysis
+
+Venice identified as having the highest average price
+
+Power BI
 
 Overview
 
@@ -679,110 +818,94 @@ Price & Market Analysis
 
 Application
 
-Interactive Streamlit nightly-price estimator.
+Interactive Streamlit price estimator
 
-Limitations
+User-friendly interface for non-coders
 
-The current project has several limitations:
+⚠️ Limitations
 
-The model uses a limited set of listing attributes.
+The model uses a limited number of listing characteristics.
 
-Important price-driving factors such as exact neighborhood, amenities, availability, seasonality, demand, host characteristics, and booking history are not included in the model.
+Neighborhood-level information is not included.
 
-The R² score of the deployed model is relatively low, so predictions should be treated as rough estimates rather than exact market prices.
+Amenities are not included.
 
-The dataset represents specific Inside Airbnb collection periods and therefore does not represent every future market condition.
+Seasonality and demand are not modeled.
 
-Dropping incomplete rows improves consistency but reduces the amount of available data.
+Host-level information is not included.
 
-Probability-based imputation retains more data but can introduce artificial values.
+The dataset represents specific data-collection periods.
 
-The current Streamlit application is intended as an estimation tool rather than a production pricing system.
+Dropping incomplete rows reduces the available dataset.
 
-Future Improvements
+Probability-based imputation can introduce artificial values.
 
-Potential improvements include:
+The final model has a relatively low R².
 
-Add neighborhood-level information
+Predictions should be treated as rough estimates rather than exact market prices.
 
-Include amenities
+🔮 Future Improvements
 
-Include availability and occupancy-related features
+Possible improvements include:
 
-Add seasonal or time-based variables
+🗺️ Add neighborhood-level features
 
-Perform stronger outlier treatment
+🛋️ Add amenities
 
-Test additional regression algorithms
+📅 Add seasonal and time-based features
 
-Perform hyperparameter tuning
+📈 Include availability and demand information
 
-Use cross-validation
+🔍 Improve outlier treatment
 
-Experiment with target transformations such as log-price
+⚙️ Perform hyperparameter tuning
 
-Improve feature engineering
+🔁 Use cross-validation
 
-Compare additional missing-value strategies
+🤖 Test additional regression algorithms
 
-Improve deployment reliability
+📐 Experiment with log-price transformation
 
-Add prediction intervals or confidence ranges
+🧠 Improve feature engineering
 
-Add more Italian cities
+🇮🇹 Add more Italian cities
 
-Add a live data-refresh workflow
+🔄 Automate future data collection
 
-What I Learned
+📊 Add prediction intervals
 
-The project strengthened my existing skills in data cleaning, preprocessing, machine learning and visualization while introducing me to a new area: SQL.
+🚀 Improve deployment reliability
 
-SQL was particularly valuable because it required learning how to approach the same dataset from a database perspective rather than only through Python.
+🎓 What I Learned
 
-The project also helped demonstrate how different technologies can work together in one data-science workflow:
-
-Python → SQL → Power BI → Machine Learning → Streamlit
-
-The most important learning outcome was not simply building a model, but learning how to connect multiple tools into one complete project.
-
-Skills Demonstrated
-
-Real-world data collection
+This project strengthened my existing skills in:
 
 Data cleaning
 
-Missing-value analysis
-
 Data preprocessing
 
-Feature selection
-
-Categorical encoding
-
-Regression modeling
-
-Model comparison
+Machine learning
 
 Model evaluation
 
-SQL
-
-MySQL
-
 Data visualization
 
-Power BI
+The biggest new skill I developed was SQL.
 
-Streamlit
+Learning SQL showed me that the same dataset can be approached from different perspectives — through Python for Data Science, SQL for structured analysis, and Power BI for communication and visualization.
 
-Model serialization
+The project also taught me how different tools can be connected into a single workflow:
 
-Application deployment
+Python → SQL → Machine Learning → Power BI → Streamlit
 
-End-to-end data science workflow
+💡 Biggest Takeaway
 
-Project Status
+The main achievement of this project is not simply the final prediction model.
 
-Completed as an individual data science project.
+I built the project to demonstrate how I can use and connect the different Data Science skills I have learned to solve a real-world problem.
 
-The project is designed to demonstrate practical data-science skills through a complete workflow rather than presenting only a standalone machine-learning model.
+It combines:
+
+Data Collection + Data Cleaning + SQL + Machine Learning + Visualization + Application Development
+
+into one complete project.
