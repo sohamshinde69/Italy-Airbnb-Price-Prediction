@@ -221,3 +221,11 @@ I therefore compared the two approaches and observed that the effect of imputati
 For analysis and visualization, the complete-case dataset also provided cleaner observations.
 
 The final Streamlit model was trained using the dropped-data workflow.
+
+
+<h2>🤔 Why Compare Both?</h2>
+The purpose was to determine whether keeping more rows through imputation actually produced better downstream results.
+
+The comparison showed that data quality and the effect of imputation mattered more than simply having a larger dataset.
+
+The final Streamlit model was trained using the dropped-data workflow.
