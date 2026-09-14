@@ -107,6 +107,13 @@ Real-world data + geographical analysis + SQL + machine learning + visualization
 
 <h3>Why was Milan excluded?</h3>
 
+Milan was originally planned as one of the cities.
+
+However, its Inside Airbnb dataset could not be loaded successfully during data collection. Instead of stopping the project, I replaced Milan with Naples.
+
+This also became part of the real-world data collection experience: external datasets do not always behave as expected.
+
+
 
 
 <h2>📊 Data Collection</h2>
@@ -136,8 +143,3 @@ Original Dataset
 
 70,897 rows × 14 columns
 
-Milan was originally planned as one of the cities.
-
-However, its Inside Airbnb dataset could not be loaded successfully during data collection. Instead of stopping the project, I replaced Milan with Naples.
-
-This also became part of the real-world data collection experience: external datasets do not always behave as expected.
