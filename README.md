@@ -229,3 +229,19 @@ The purpose was to determine whether keeping more rows through imputation actual
 The comparison showed that data quality and the effect of imputation mattered more than simply having a larger dataset.
 
 The final Streamlit model was trained using the dropped-data workflow.
+
+
+
+
+
+<h2>🧪 Models Compared</h2>
+Three regression models were tested:
+
+Model	Purpose
+📉 Linear Regression	Simple baseline
+🌲 Random Forest Regressor	Tree-based ensemble
+🚀 Gradient Boosting Regressor	Boosting-based model
+
+The same overall evaluation approach was used to compare the models and investigate the effect of the two missing-value strategies.
+
+
