@@ -143,3 +143,41 @@ Original Dataset
 
 70,897 rows × 14 columns
 
+
+
+<h2>🧹 Data Cleaning</h2>
+The raw Airbnb datasets contained missing values in several important columns.
+
+Missing Values
+
+Column      | Missing Values
+
+bedrooms    | 12,877
+
+bathrooms   |11,004
+
+review_scores_rating   | 9,020
+
+price   | 5,050  
+
+price_quote_price_per_night   | 5,051
+
+minimum_nights   | 22
+
+
+The datasets also required conversion of currency-formatted price values into numerical values.
+
+💰 Price Cleaning
+
+Values such as:
+
+$117.13
+$1,250.00
+
+were converted into numerical values by:
+
+Remove $
+   ↓
+Remove commas
+   ↓
+Convert to numeric
