@@ -648,6 +648,7 @@ This is my preferred dashboard page because it demonstrates the geographical sco
 
 <h4>3️⃣ Price & Market Analysis</h4>
 Explores relationships between price and listing characteristics such as:
+<br>
 
 City
 
