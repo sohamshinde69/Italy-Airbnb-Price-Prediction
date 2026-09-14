@@ -259,3 +259,27 @@ The same overall evaluation approach was used to compare the models and investig
 |🚀 Gradient Boosting	 |  83.46     |	  268.37	 |   0.089   |
 <br>
 Lower MAE and RMSE are better. Higher R² is better.
+
+
+<h2>🏆 Final Model</h2>
+
+The final model used in the Streamlit application is:
+
+Gradient Boosting Regressor
+
+Configuration:
+
+n_estimators = 200
+learning_rate = 0.05
+max_depth = 3
+random_state = 42
+
+<h3>Why Gradient Boosting?</h3>
+
+Linear Regression was initially explored, but it produced negative price predictions during experimentation.
+
+Since a negative Airbnb nightly price is not meaningful, Gradient Boosting was selected as the practical model for the final application.
+
+The final serialized model was saved as:
+
+model.pkl
