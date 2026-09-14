@@ -592,23 +592,23 @@ The goal was to make sure I could confidently explain every query and result if 
 
 <h3>Questions Covered</h3>
 What is the average listing price in each city?
-
+<br>
 What is the average price for each room type in each city?
-
+<br>
 What are the 10 highest-rated listings with more than 20 reviews?
-
+<br>
 How are listings distributed across different price ranges?
-
+<br>
 What are the 10 cheapest listings?
-
+<br>
 What are the 10 most expensive listings?
-
+<br>
 How does average price vary with accommodation capacity?
-
+<br>
 Which listings have a review rating greater than 4.8?
-
+<br>
 Which listings have received more than 50 reviews?
-
+<br>
 How many listings exist for each property type?
 
 <h3>💡 Interesting Finding</h3>
