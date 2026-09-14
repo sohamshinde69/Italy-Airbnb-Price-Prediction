@@ -677,8 +677,7 @@ The application is designed for:
 
 Anyone who wants a rough Airbnb price estimate, particularly travelers and users interested in Airbnb pricing.
 
-User Inputs
-
+<h3>User Inputs</h3>
 Property Information
 
 City
@@ -701,6 +700,6 @@ Number of reviews
 
 Review score rating
 
-The application then returns an:
+<h3>The application then returns an:</h3>
 
 💶 Estimated nightly price
