@@ -82,9 +82,8 @@ Real-world data + geographical analysis + SQL + machine learning + visualization
 
 <h2>🏙️ Cities Included</h2>
 
-City
+<h3>City</h3>
 
-Status
 
 🇮🇹 Rome
 
@@ -106,7 +105,7 @@ Status
 
 ❌ Excluded
 
-Why was Milan excluded?
+<h3>Why was Milan excluded?</h3>
 
 Milan was originally planned as one of the cities.
 
