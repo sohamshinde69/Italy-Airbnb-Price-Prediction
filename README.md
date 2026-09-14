@@ -117,26 +117,18 @@ For every city, the same set of columns was selected so that the datasets could 
 
 
 <h3>Dataset Size</h3>
-City
 
 
-Rome
 
-37,084
+Rome  : 37,084
 
-Florence
+Florence : 13,472
 
-13,472
+Venice : 8,766
 
-Venice
+Naples : 11,575
 
-8,766
-
-Naples
-
-11,575
-
-Total
+<h3>Total</h3>
 
 70,897
 
