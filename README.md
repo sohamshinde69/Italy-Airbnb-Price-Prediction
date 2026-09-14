@@ -21,3 +21,30 @@ The project was created with three main goals:
 🧠 Demonstrate how I can combine multiple Data Science skills to solve a real-world problem.
 
 Unlike my previous projects, which mainly used Kaggle datasets and classification problems, this project uses an external real-world data source and focuses on regression.
+
+
+<h2>🎯 Project Objectives</h2>
+
+Collect real-world Airbnb data from an external source.
+
+Collect the same features from multiple Italian cities.
+
+Combine the city-level datasets into one dataset.
+
+Clean and preprocess the raw data.
+
+Compare different missing-value handling approaches.
+
+Perform data analysis using Python and SQL.
+
+Compare multiple regression models.
+
+Evaluate models using MAE, RMSE and R².
+
+Build an interactive Power BI dashboard.
+
+Make the analytical results understandable to non-coders.
+
+Deploy a machine-learning prediction model using Streamlit.
+
+Demonstrate the ability to learn and integrate SQL into a Data Science workflow.
