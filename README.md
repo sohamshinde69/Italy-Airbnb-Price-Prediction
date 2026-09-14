@@ -48,3 +48,31 @@ Make the analytical results understandable to non-coders.
 Deploy a machine-learning prediction model using Streamlit.
 
 Demonstrate the ability to learn and integrate SQL into a Data Science workflow.
+
+
+
+<h2>🌍 Why Airbnb and Italy?</h2>
+
+I chose Airbnb and Italy because the topic allowed me to demonstrate several different skills in one project.
+
+Why Airbnb?
+
+It is a real-world dataset.
+
+Airbnb pricing provides a practical regression problem.
+
+The dataset contains both numerical and categorical features.
+
+It supports geographical analysis.
+
+It can be analyzed using Python, SQL and Power BI.
+
+The final model can be converted into an interactive application.
+
+Why Italy?
+
+Italy has several major tourist destinations with different Airbnb markets, making it suitable for city-level comparison.
+
+The project therefore combines:
+
+Real-world data + geographical analysis + SQL + machine learning + visualization + deployment
