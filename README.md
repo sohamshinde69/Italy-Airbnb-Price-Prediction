@@ -115,21 +115,10 @@ The data was collected from Inside Airbnb, rather than using a ready-made Kaggle
 
 For every city, the same set of columns was selected so that the datasets could be combined consistently.
 
-Collection Workflow
 
-Rome Dataset
-      │
-Florence Dataset
-      │
-Venice Dataset
-      ├──────► Same Columns ──────► Combined Dataset
-Naples Dataset
-
-Dataset Size
-
+<h3>Dataset Size</h3>
 City
 
-Listings
 
 Rome
 
