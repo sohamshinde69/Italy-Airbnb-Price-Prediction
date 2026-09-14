@@ -665,3 +665,42 @@ Other market characteristics
 Slicers and interactive visuals allow users to explore the data without writing Python or SQL.
 
 The purpose was to make the analytical results understandable to non-technical users.
+
+
+
+
+<h2>🌐 Streamlit Application</h2>
+
+The final machine-learning model was integrated into a Streamlit application.
+
+The application is designed for:
+
+Anyone who wants a rough Airbnb price estimate, particularly travelers and users interested in Airbnb pricing.
+
+User Inputs
+
+Property Information
+
+City
+
+Room type
+
+Property type
+
+Listing Information
+
+Accommodates
+
+Bedrooms
+
+Bathrooms
+
+Minimum nights
+
+Number of reviews
+
+Review score rating
+
+The application then returns an:
+
+💶 Estimated nightly price
