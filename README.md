@@ -107,6 +107,54 @@ Real-world data + geographical analysis + SQL + machine learning + visualization
 
 <h3>Why was Milan excluded?</h3>
 
+
+
+<h2>📊 Data Collection</h2>
+
+The data was collected from Inside Airbnb, rather than using a ready-made Kaggle dataset.
+
+For every city, the same set of columns was selected so that the datasets could be combined consistently.
+
+Collection Workflow
+
+Rome Dataset
+      │
+Florence Dataset
+      │
+Venice Dataset
+      ├──────► Same Columns ──────► Combined Dataset
+Naples Dataset
+
+Dataset Size
+
+City
+
+Listings
+
+Rome
+
+37,084
+
+Florence
+
+13,472
+
+Venice
+
+8,766
+
+Naples
+
+11,575
+
+Total
+
+70,897
+
+Original Dataset
+
+70,897 rows × 14 columns
+
 Milan was originally planned as one of the cities.
 
 However, its Inside Airbnb dataset could not be loaded successfully during data collection. Instead of stopping the project, I replaced Milan with Naples.
