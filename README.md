@@ -76,3 +76,40 @@ Italy has several major tourist destinations with different Airbnb markets, maki
 The project therefore combines:
 
 Real-world data + geographical analysis + SQL + machine learning + visualization + deployment
+
+
+
+
+<h2>🏙️ Cities Included</h2>
+
+City
+
+Status
+
+🇮🇹 Rome
+
+✅ Included
+
+🇮🇹 Florence
+
+✅ Included
+
+🇮🇹 Venice
+
+✅ Included
+
+🇮🇹 Naples
+
+✅ Included
+
+🇮🇹 Milan
+
+❌ Excluded
+
+Why was Milan excluded?
+
+Milan was originally planned as one of the cities.
+
+However, its Inside Airbnb dataset could not be loaded successfully during data collection. Instead of stopping the project, I replaced Milan with Naples.
+
+This also became part of the real-world data collection experience: external datasets do not always behave as expected.
