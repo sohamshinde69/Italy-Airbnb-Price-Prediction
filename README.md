@@ -591,25 +591,34 @@ SQL was a new skill for me, so I intentionally kept the questions at a beginner 
 The goal was to make sure I could confidently explain every query and result if asked during my college evaluation.
 
 <h3>Questions Covered</h3>
-What is the average listing price in each city?
+Question 1 : What is the average listing price in each city?
 <br>
-What is the average price for each room type in each city?
 <br>
-What are the 10 highest-rated listings with more than 20 reviews?
+Question 2 : What is the average price for each room type in each city?
 <br>
-How are listings distributed across different price ranges?
 <br>
-What are the 10 cheapest listings?
+Question 3 : What are the 10 highest-rated listings with more than 20 reviews?
 <br>
-What are the 10 most expensive listings?
 <br>
-How does average price vary with accommodation capacity?
+Question 4 : How are listings distributed across different price ranges?
 <br>
-Which listings have a review rating greater than 4.8?
 <br>
-Which listings have received more than 50 reviews?
+Question 5 : What are the 10 cheapest listings?
 <br>
-How many listings exist for each property type?
+<br>
+Question 6 : What are the 10 most expensive listings?
+<br>
+<br>
+Question 7 : How does average price vary with accommodation capacity?
+<br>
+<br>
+Question 8 : Which listings have a review rating greater than 4.8?
+<br>
+<br>
+Question 9 : Which listings have received more than 50 reviews?
+<br>
+<br>
+Question 10 : How many listings exist for each property type?
 
 <h3>💡 Interesting Finding</h3>
 One of the most interesting results was:
