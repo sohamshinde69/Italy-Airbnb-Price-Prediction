@@ -249,13 +249,13 @@ The same overall evaluation approach was used to compare the models and investig
 
 
 <h2>Results — Dropped-Data Workflow</h2>
-
-Model                 	MAE ↓	      RMSE ↓	    R² ↑
-
-🌲 Random Forest	      95.03	      292.62	   -0.083
-
-📉 Linear Regression	  86.97      	256.46	   0.168
-
-🚀 Gradient Boosting	  83.46      	268.37	   0.089
-
+--------------------------------------------------------
+|Model                 |	MAE ↓	  |    RMSE ↓|    R² ↑ |
+|                      |          |          |         |
+|🌲 Random Forest	     |95.03	    | 292.62	 | -0.083  |
+|                      |          |          |         |
+|📉 Linear Regression	 |86.97     |	256.46	 | 0.168   |
+|                      |          |          |         |
+|🚀 Gradient Boosting	 |83.46     |	268.37	 | 0.089   |
+--------------------------------------------------------
 Lower MAE and RMSE are better. Higher R² is better.
