@@ -178,3 +178,46 @@ were converted into numerical values by:
 
 Remove $   ---> Remove commas   ---> Convert to numeric
 
+
+
+<h2>🔬 Missing-Value Handling</h2>
+
+One of the important parts of this project was comparing two different approaches to missing values.
+
+<h3>Approach 1 — Probability-Based Imputation</h3>
+Missing values in selected columns such as:
+
+bathrooms
+
+bedrooms
+
+review_scores_rating
+
+were filled using probability-based sampling from the available values.
+
+<h4>Advantage</h4>
+
+✅ Retained significantly more rows.
+
+<h4>Disadvantage</h4>
+
+⚠️ Introduced estimated values instead of original observations.
+
+<h3>Approach 2 — Dropping Missing Rows</h3>
+The second approach removed rows containing missing values using:
+
+dropna()
+
+This produced:
+
+44,946 complete listings
+
+Why compare both?
+
+I did not want to assume that a larger dataset automatically meant a better model.
+
+I therefore compared the two approaches and observed that the effect of imputation on model performance was more important than simply retaining more rows.
+
+For analysis and visualization, the complete-case dataset also provided cleaner observations.
+
+The final Streamlit model was trained using the dropped-data workflow.
