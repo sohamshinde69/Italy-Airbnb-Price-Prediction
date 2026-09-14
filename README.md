@@ -647,7 +647,7 @@ Shows the geographical distribution of Airbnb listings using latitude and longit
 This is my preferred dashboard page because it demonstrates the geographical scope of the project visually.
 
 <h4>3️⃣ Price & Market Analysis</h4>
-E<h5>xplores relationships between price and listing characteristics such as:</h5>
+<h5>Explores relationships between price and listing characteristics such as:</h5>
 <br>
 
 City
