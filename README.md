@@ -55,7 +55,7 @@ Demonstrate the ability to learn and integrate SQL into a Data Science workflow.
 
 I chose Airbnb and Italy because the topic allowed me to demonstrate several different skills in one project.
 
-Why Airbnb?
+<h3>Why Airbnb?</h3>
 
 It is a real-world dataset.
 
@@ -69,7 +69,7 @@ It can be analyzed using Python, SQL and Power BI.
 
 The final model can be converted into an interactive application.
 
-Why Italy?
+<h3>Why Italy?</h3>
 
 Italy has several major tourist destinations with different Airbnb markets, making it suitable for city-level comparison.
 
