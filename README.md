@@ -270,8 +270,11 @@ Gradient Boosting Regressor
 Configuration:
 
 n_estimators = 200
+
 learning_rate = 0.05
+
 max_depth = 3
+
 random_state = 42
 
 <h3>Why Gradient Boosting?</h3>
