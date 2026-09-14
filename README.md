@@ -167,7 +167,7 @@ minimum_nights   | 22
 
 The datasets also required conversion of currency-formatted price values into numerical values.
 
-💰 Price Cleaning
+<h3>💰 Price Cleaning</h3>
 
 Values such as:
 
@@ -176,8 +176,5 @@ $1,250.00
 
 were converted into numerical values by:
 
-Remove $
-   ↓
-Remove commas
-   ↓
-Convert to numeric
+Remove $   ---> Remove commas   ---> Convert to numeric
+
