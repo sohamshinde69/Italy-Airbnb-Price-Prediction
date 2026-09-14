@@ -6,7 +6,8 @@
 An End-to-End Data Science Project using Real-World Airbnb Data
 
 Python • SQL • Machine Learning • Power BI • Streamlit
-
+<h2>Streamlit App Link : </h2>
+https://italy-airbnb-price-prediction.streamlit.app/
 <h2>📌 Project Overview</h2>
 The Italy Airbnb Data Analytics and Price Prediction System is an individual end-to-end Data Science project built using real Airbnb listing data collected from Inside Airbnb.
 
